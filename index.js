@@ -165,6 +165,7 @@ function appleIndex(arr) {
  * the returned value should be: [ false, true, false, false, true, false ].
 */
 function isItAnApple(incomingArr) {
+  /*
   let finalArr = [];
 
   for (let item of incomingArr) {
@@ -176,6 +177,22 @@ function isItAnApple(incomingArr) {
   }
 
   return finalArr;
+  */
+
+  /* Version with an old loop */
+
+  let finalArr = [];
+  
+  for (let i = 0; i <= incomingArr.length - 1; i++) {
+    if (incomingArr[i] === "apple") {
+      finalArr.push(true);
+    } else {
+      finalArr.push(false);
+    }
+  }
+
+  return finalArr;
+
 }
 
 
