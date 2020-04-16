@@ -75,8 +75,14 @@ function temperatureCtoF(celsius) {
  * 
  * Hint: You can call your `temperatureCtoF` function from inside `temperatureInF`.
 */
-function temperatureInF(/* code here */) {
-  /* code here */
+function temperatureInF(t, scale) {
+
+  if (scale == "F") {
+    return `${t}${scale}`;
+  } else if (scale == "C") {
+    return temperatureCtoF(t) + "F";
+  }
+
 }
 
 
