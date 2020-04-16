@@ -310,7 +310,7 @@ function getCarInfoById(inventory, id) {
 function getOlderCars(inventory, maxYear) {
   let resultCars = [];
 
-  for (car of inventory) {
+  for (let car of inventory) {
     if (car.car_year <= maxYear) {
       resultCars.push(car);
     }
