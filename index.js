@@ -167,7 +167,7 @@ function appleIndex(arr) {
 function isItAnApple(incomingArr) {
   let finalArr = [];
 
-  for (item of incomingArr) {
+  for (let item of incomingArr) {
     if (item === "apple") {
       finalArr.push(true);
     } else {
