@@ -182,7 +182,7 @@ function isItAnApple(incomingArr) {
 
 /*
 // ⭐️ Example Test Data ⭐️
-
+*/
 var inventory = [
   { id: 1, car_make: "Lincoln", car_model: "Navigator", car_year: 2009 },
   { id: 2, car_make: "Mazda", car_model: "Miata MX-5", car_year: 2001 },
@@ -200,7 +200,7 @@ var inventory = [
   { id: 14, car_make: "Dodge", car_model: "Ram Van 1500", car_year: 1999 }
   /// ... Truncated
 ]
-*/
+
 /**
   * ### Example Array Challenge:
   * 
@@ -233,7 +233,10 @@ function get3rdCar(inventory) {
  * it will return `This is a Lincoln Navigator`.
 */
 function getCarInfoByIndex(inventory, index) {
-  /* code here */
+  const make = inventory[index].car_make;
+  const model = inventory[index].car_model;
+
+  return `This is a ${make} ${model}`;
 }
 
 /**
